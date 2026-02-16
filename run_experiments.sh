@@ -49,7 +49,7 @@ while IFS=',' read -r ip port gbs continent country site provider; do
     echo "Attempting destination: $ip on port $port"
 
     # Invoke the Python client with both the server and the specific port
-    python3 iperf_client.py --server "$ip" --port "$port" --time 60
+    python3 iperf_client.py --server "$ip" --port "$port" --time 10
 
     # Check the exit status of the python script
     if [ $? -eq 0 ]; then
