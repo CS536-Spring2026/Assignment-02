@@ -2,7 +2,7 @@
 
 ## Usage
 
-1. `run_experiments.sh` : runs all scripts
+1. `run_experiments.sh` : runs all scripts. optional -n flag for number of destinations.
 
 ## Files
 
