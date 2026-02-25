@@ -1,0 +1,10 @@
+{
+    "server": "185.93.3.50",
+    "port": 5201,
+    "start_time": 1772056026.2420506,
+    "duration": 60,
+    "interval": 0.2,
+    "status": "failed",
+    "failure_reason": "socket_closed_prematurely",
+    "end_time": 1772056026.4917898
+}

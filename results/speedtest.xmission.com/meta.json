@@ -1,0 +1,9 @@
+{
+    "server": "speedtest.xmission.com",
+    "port": 5202,
+    "start_time": 1772056088.9428906,
+    "duration": 60,
+    "interval": 0.2,
+    "status": "failed",
+    "failure_reason": "conn_timeout"
+}

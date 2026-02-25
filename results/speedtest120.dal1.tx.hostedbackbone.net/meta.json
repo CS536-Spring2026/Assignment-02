@@ -1,0 +1,10 @@
+{
+    "server": "speedtest120.dal1.tx.hostedbackbone.net",
+    "port": 5201,
+    "start_time": 1772055838.8644998,
+    "duration": 60,
+    "interval": 0.2,
+    "status": "success",
+    "failure_reason": null,
+    "end_time": 1772055899.2227473
+}

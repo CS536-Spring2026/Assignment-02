@@ -1,12 +1,31 @@
 # Assignment 2 - CS 536
 
+## Setup & Prerequisites
+If on windows, make sure to run wsl so that you can run the bash script.
+
+**CRITICAL**: You MUST have Docker Engine or **Docker Desktop** open and running before executing this pipeline. Because standard Windows networking lacks the native `linux/tcp.h` `TCP_INFO` metrics, this project strictly runs inside a containerized Ubuntu 24.04 kernel.
+
 ## Usage
 
-1. `run_experiments.sh` : runs all scripts. optional -n flag for number of destinations.
+To automatically compile the Docker image and execute the master pipeline inside the container, use the provided Bash script. Execute this from Git Bash, WSL, or any bash-compatible terminal:
+
+```bash
+# Simply run the script. By default, it automatically uses `--server_list server_list.csv -n 10 --duration 60`
+./run_experiments.sh
+
+# You can still optionally override the defaults if needed:
+# ./run_experiments.sh -n 5 --duration 30
+```
+
 
 ## Files
 
-1. `iperf_client.py` : establishes iperf connection
+1. `run_all.py` : Master orchestration script.
+2. `runner.py` : Handles iterating over servers and robust retries.
+3. `iperf3_client.py` : Binds protocol connection and data transmission loop.
+4. `proto.py` : iperf3 Control Connection state machine.
+5. `tcpinfo.py` : Extracts native TCP_INFO metrics via `getsockopt`.
+6. `plotting.py` : Generates PDFs/PNGs and Markdown observations.
 
 ## Notes
 

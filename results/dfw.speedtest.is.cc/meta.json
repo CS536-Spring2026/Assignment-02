@@ -1,0 +1,9 @@
+{
+    "server": "dfw.speedtest.is.cc",
+    "port": 5202,
+    "start_time": 1772055707.1360047,
+    "duration": 60,
+    "interval": 0.2,
+    "status": "failed",
+    "failure_reason": "conn_timeout"
+}

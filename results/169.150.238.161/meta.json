@@ -1,0 +1,10 @@
+{
+    "server": "169.150.238.161",
+    "port": 5201,
+    "start_time": 1772055899.2296152,
+    "duration": 60,
+    "interval": 0.2,
+    "status": "success",
+    "failure_reason": null,
+    "end_time": 1772055961.7663746
+}

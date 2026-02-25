@@ -1,0 +1,9 @@
+{
+    "server": "ping6-90ms.online.net",
+    "port": 5200,
+    "start_time": 1772055961.7731087,
+    "duration": 60,
+    "interval": 0.2,
+    "status": "failed",
+    "failure_reason": "conn_error_[Errno -2] Name or service not known"
+}
