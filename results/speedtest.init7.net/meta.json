@@ -1,10 +1,9 @@
 {
     "server": "speedtest.init7.net",
     "port": 5201,
-    "start_time": 1772062035.7730265,
+    "start_time": 1772131784.2131903,
     "duration": 60,
     "interval": 0.2,
-    "status": "success",
-    "failure_reason": null,
-    "end_time": 1772062097.2120085
+    "status": "failed",
+    "failure_reason": "conn_error_[Errno -3] Temporary failure in name resolution"
 }

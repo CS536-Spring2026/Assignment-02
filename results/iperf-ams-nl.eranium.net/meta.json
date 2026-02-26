@@ -1,10 +1,10 @@
 {
     "server": "iperf-ams-nl.eranium.net",
     "port": 5201,
-    "start_time": 1772062168.592145,
+    "start_time": 1772131862.1214058,
     "duration": 60,
     "interval": 0.2,
-    "status": "success",
-    "failure_reason": null,
-    "end_time": 1772062229.3900592
+    "status": "failed",
+    "failure_reason": "run_error_ConnectionResetError",
+    "end_time": 1772131862.3589401
 }

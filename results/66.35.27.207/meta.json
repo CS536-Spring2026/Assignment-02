@@ -1,10 +1,9 @@
 {
     "server": "66.35.27.207",
     "port": 30000,
-    "start_time": 1772061671.0523927,
+    "start_time": 1772131759.1987343,
     "duration": 60,
     "interval": 0.2,
-    "status": "success",
-    "failure_reason": null,
-    "end_time": 1772061731.312356
+    "status": "failed",
+    "failure_reason": "conn_error_[Errno 113] No route to host"
 }

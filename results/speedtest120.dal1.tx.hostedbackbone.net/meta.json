@@ -1,10 +1,9 @@
 {
     "server": "speedtest120.dal1.tx.hostedbackbone.net",
     "port": 5201,
-    "start_time": 1772061342.2641215,
+    "start_time": 1772131705.7058494,
     "duration": 60,
     "interval": 0.2,
-    "status": "success",
-    "failure_reason": null,
-    "end_time": 1772061402.6613746
+    "status": "failed",
+    "failure_reason": "conn_error_[Errno -3] Temporary failure in name resolution"
 }

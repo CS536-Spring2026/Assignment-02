@@ -1,10 +1,9 @@
 {
     "server": "89.187.162.1",
     "port": 5201,
-    "start_time": 1772061608.612562,
+    "start_time": 1772131756.2077496,
     "duration": 60,
     "interval": 0.2,
-    "status": "success",
-    "failure_reason": null,
-    "end_time": 1772061671.0464602
+    "status": "failed",
+    "failure_reason": "conn_error_[Errno 113] No route to host"
 }

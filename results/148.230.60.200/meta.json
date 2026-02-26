@@ -1,10 +1,10 @@
 {
     "server": "148.230.60.200",
     "port": 30000,
-    "start_time": 1772062719.8723142,
+    "start_time": 1772132296.9794705,
     "duration": 60,
     "interval": 0.2,
     "status": "success",
     "failure_reason": null,
-    "end_time": 1772062780.8725069
+    "end_time": 1772132357.9573908
 }

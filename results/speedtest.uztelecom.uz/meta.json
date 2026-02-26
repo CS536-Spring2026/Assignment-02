@@ -1,10 +1,10 @@
 {
     "server": "speedtest.uztelecom.uz",
     "port": 5200,
-    "start_time": 1772062351.5958047,
+    "start_time": 1772131984.563602,
     "duration": 60,
     "interval": 0.2,
     "status": "success",
     "failure_reason": null,
-    "end_time": 1772062414.1663444
+    "end_time": 1772132050.1314821
 }

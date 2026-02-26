@@ -1,9 +1,25 @@
 server_ip,port,reason
-dfw.speedtest.is.cc,5202,conn_timeout
-213.158.175.240,5201,socket_closed_prematurely
-ping6-90ms.online.net,5200,conn_error_[Errno -2] Name or service not known
-69.48.239.124,30000,conn_refused
-185.93.3.50,5201,socket_closed_prematurely
-speedtest.xmission.com,5202,conn_timeout
-212.60.92.134,60001,data_stream_connect_failed
-iperf.online.net,5200,socket_closed_prematurely
+dfw.speedtest.is.cc,5202,conn_error_[Errno -3] Temporary failure in name resolution
+t5.cscs.ch,5201,conn_error_[Errno -3] Temporary failure in name resolution
+213.158.175.240,5201,conn_error_[Errno 113] No route to host
+109.61.86.65,5201,conn_error_[Errno 113] No route to host
+speedtest120.dal1.tx.hostedbackbone.net,5201,conn_error_[Errno -3] Temporary failure in name resolution
+169.150.238.161,5201,conn_error_[Errno 113] No route to host
+ping6-90ms.online.net,5200,conn_error_[Errno -3] Temporary failure in name resolution
+69.48.239.124,30000,conn_error_[Errno 113] No route to host
+speedtest.keff.org,9201,conn_error_[Errno -3] Temporary failure in name resolution
+185.93.3.50,5201,conn_error_[Errno 113] No route to host
+102.214.66.39,5201,conn_error_[Errno 113] No route to host
+speedtest.xmission.com,5202,conn_error_[Errno -3] Temporary failure in name resolution
+89.187.162.1,5201,conn_error_[Errno 113] No route to host
+66.35.27.207,30000,conn_error_[Errno 113] No route to host
+148.230.59.38,30000,conn_error_[Errno 113] No route to host
+23.249.55.42,30000,conn_error_[Errno 113] No route to host
+37.19.216.1,5201,conn_error_[Errno 113] No route to host
+69.48.237.66,30000,conn_error_[Errno 113] No route to host
+speedtest.masnet.ec,5201,conn_error_[Errno -3] Temporary failure in name resolution
+speedtest.init7.net,5201,conn_error_[Errno -3] Temporary failure in name resolution
+212.60.92.134,60001,conn_error_[Errno 113] No route to host
+iperf-ams-nl.eranium.net,5201,run_error_ConnectionResetError
+iperf.online.net,5200,run_error_ConnectionResetError
+138.199.4.1,5201,socket_closed_prematurely

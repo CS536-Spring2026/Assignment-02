@@ -1,9 +1,9 @@
 {
     "server": "speedtest.xmission.com",
     "port": 5202,
-    "start_time": 1772061598.5896528,
+    "start_time": 1772131746.1941485,
     "duration": 60,
     "interval": 0.2,
     "status": "failed",
-    "failure_reason": "conn_timeout"
+    "failure_reason": "conn_error_[Errno -3] Temporary failure in name resolution"
 }

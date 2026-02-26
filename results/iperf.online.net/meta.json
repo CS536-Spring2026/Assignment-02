@@ -1,10 +1,10 @@
 {
     "server": "iperf.online.net",
     "port": 5200,
-    "start_time": 1772062229.3970423,
+    "start_time": 1772131862.3597028,
     "duration": 60,
     "interval": 0.2,
     "status": "failed",
-    "failure_reason": "socket_closed_prematurely",
-    "end_time": 1772062229.6481533
+    "failure_reason": "run_error_ConnectionResetError",
+    "end_time": 1772131862.72704
 }

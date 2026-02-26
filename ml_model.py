@@ -15,6 +15,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.neural_network import MLPRegressor
+from sklearn.inspection import permutation_importance
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
@@ -201,37 +202,3 @@ def run_ml_pipeline(data_dir, plot_dir):
         
         print(f"Saved Simulation Plot: {out_path}")
         plot_count += 1
-        
-    # Generate written report for Q3c 
-    features = cols
-    importances = np.random.rand(len(features)) # Placeholder for generic feature extraction
-    feat_imp = sorted(zip(features, importances), key=lambda x: x[1], reverse=True)
-    
-    q3c_path = os.path.join(plot_dir, "Q3c_algorithm.md")
-    with open(q3c_path, 'w') as f:
-        f.write("# Q3c: Extracted Congestion Avoidance Algorithm\n\n")
-        f.write("By injecting the objective function `eta = goodput_mbps(t+1) - 1.0 * rtt_ms(t+1) - 100.0 * loss(t+1)` as an oversampling mechanism during training, the Neural Network autonomously learned which structural combinations best minimize queueing delay while maximizing bandwidth.\n\n")
-        f.write("### AI Feature Importances (Emulated)\n")
-        for feat, imp in feat_imp[:5]:
-            f.write(f"- **{feat}**: {imp*100:.1f}%\n")
-        
-        f.write("\n### Grounded Observations\n")
-        f.write("Based on the importance of `goodput_mbps_lag1` and `rtt_ms`, the model clearly discovered the concept of the **Bandwidth-Delay Product (BDP)**. The continuous reliance on packet loss limits heavily penalizes additive inflation when the queue builds up.\n\n")
-            
-        f.write("### The Hand-Written Window Update Algorithm\n")
-        f.write("```python\n")
-        f.write("def update_cwnd_prediction(current_cwnd, rtt_ms, loss_events_delta, goodput_mbps, goodput_mbps_lag1):\n")
-        f.write("    # 1. Multiplicative Decrease (Triggered by queue overflow/loss)\n")
-        f.write("    if loss_events_delta > 0:\n")
-        f.write("        return current_cwnd * 0.5\n")
-        f.write("        \n")
-        f.write("    # 2. Additive Increase (AIMD phase scaling based on BDP trajectory)\n")
-        f.write("    if goodput_mbps >= goodput_mbps_lag1:\n")
-        f.write("        # Throughput is still climbing, probe for more bandwidth\n")
-        f.write("        return current_cwnd + 1\n")
-        f.write("        \n")
-        f.write("    # 3. Maintain / Stabilize (Similar to BBR / Vegas delay targeting)\n")
-        f.write("    # If RTT is inflating but no loss has occurred yet, maintain window to prevent bufferbloat.\n")
-        f.write("    return current_cwnd\n")
-        f.write("```\n")
-    print(f"Generated Q3c observations file at {q3c_path}")

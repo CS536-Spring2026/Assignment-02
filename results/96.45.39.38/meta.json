@@ -1,10 +1,10 @@
 {
     "server": "96.45.39.38",
     "port": 30000,
-    "start_time": 1772062107.754864,
+    "start_time": 1772131796.198588,
     "duration": 60,
     "interval": 0.2,
     "status": "success",
     "failure_reason": null,
-    "end_time": 1772062168.5848992
+    "end_time": 1772131862.1203072
 }

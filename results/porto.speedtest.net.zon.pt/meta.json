@@ -1,10 +1,10 @@
 {
     "server": "porto.speedtest.net.zon.pt",
     "port": 5201,
-    "start_time": 1772062536.6517484,
+    "start_time": 1772132111.668244,
     "duration": 60,
     "interval": 0.2,
     "status": "success",
     "failure_reason": null,
-    "end_time": 1772062597.5756683
+    "end_time": 1772132172.9516764
 }

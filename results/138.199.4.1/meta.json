@@ -1,10 +1,10 @@
 {
     "server": "138.199.4.1",
     "port": 5201,
-    "start_time": 1772062414.1724577,
+    "start_time": 1772132050.1323893,
     "duration": 60,
     "interval": 0.2,
-    "status": "success",
-    "failure_reason": null,
-    "end_time": 1772062475.4836655
+    "status": "failed",
+    "failure_reason": "socket_closed_prematurely",
+    "end_time": 1772132050.406466
 }

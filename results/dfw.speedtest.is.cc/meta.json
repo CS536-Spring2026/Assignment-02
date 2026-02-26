@@ -1,9 +1,9 @@
 {
     "server": "dfw.speedtest.is.cc",
     "port": 5202,
-    "start_time": 1772061210.4101179,
+    "start_time": 1772131681.805279,
     "duration": 60,
     "interval": 0.2,
     "status": "failed",
-    "failure_reason": "conn_timeout"
+    "failure_reason": "conn_error_[Errno -3] Temporary failure in name resolution"
 }

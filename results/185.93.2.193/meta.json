@@ -1,10 +1,10 @@
 {
     "server": "185.93.2.193",
     "port": 5201,
-    "start_time": 1772062290.6440988,
+    "start_time": 1772131923.6768062,
     "duration": 60,
     "interval": 0.2,
     "status": "success",
     "failure_reason": null,
-    "end_time": 1772062351.5892174
+    "end_time": 1772131984.5621703
 }
