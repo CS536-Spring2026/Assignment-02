@@ -1,10 +1,10 @@
 {
     "server": "t5.cscs.ch",
     "port": 5201,
-    "start_time": 1772055717.200753,
+    "start_time": 1772061220.4865096,
     "duration": 60,
     "interval": 0.2,
     "status": "success",
     "failure_reason": null,
-    "end_time": 1772055778.1109793
+    "end_time": 1772061281.5326185
 }

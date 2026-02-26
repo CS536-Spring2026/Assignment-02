@@ -1,10 +1,10 @@
 {
     "server": "speedtest.keff.org",
     "port": 9201,
-    "start_time": 1772055965.1453688,
+    "start_time": 1772061468.2548807,
     "duration": 60,
     "interval": 0.2,
     "status": "success",
     "failure_reason": null,
-    "end_time": 1772056026.2345057
+    "end_time": 1772061529.3921788
 }

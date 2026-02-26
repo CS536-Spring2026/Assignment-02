@@ -24,29 +24,35 @@ def main():
     parser.add_argument("--outdir", type=str, default="results", help="Dir to store traces")
     parser.add_argument("--plotsdir", type=str, default="plots", help="Dir to store plots")
     parser.add_argument("--representative", type=str, default=None, help="Explicitly select representive server ip")
+    parser.add_argument("--ml_only", action="store_true", help="Skip data collection and only run the ML pipeline")
     
     args = parser.parse_args()
     
-    print("="*50)
-    print(f"Running iperf3 tests: {args.n} destinations, {args.duration}s duration")
-    print("="*50)
-    run_experiments(
-        args.server_list, 
-        args.n, 
-        args.duration, 
-        args.interval, 
-        args.timeout, 
-        args.seed, 
-        args.outdir
-    )
-    
-    print("="*50)
-    print("Generating Plots and Summaries")
-    print("="*50)
-    os.makedirs(args.plotsdir, exist_ok=True)
-    plotting.generate_q1(args.outdir, args.plotsdir)
-    plotting.generate_q2(args.outdir, args.plotsdir, args.representative)
-    
+    if not args.ml_only:
+        print("="*50)
+        print(f"Running iperf3 tests: {args.n} destinations, {args.duration}s duration")
+        print("="*50)
+        run_experiments(
+            args.server_list, 
+            args.n, 
+            args.duration, 
+            args.interval, 
+            args.timeout, 
+            args.seed, 
+            args.outdir
+        )
+        
+        print("="*50)
+        print("Generating Plots and Summaries")
+        print("="*50)
+        os.makedirs(args.plotsdir, exist_ok=True)
+        plotting.generate_q1(args.outdir, args.plotsdir)
+        plotting.generate_q2(args.outdir, args.plotsdir, args.representative)
+    else:
+        print("="*50)
+        print("Skipping Q1/Q2 data collection. Fast-forwarding to ML Pipeline.")
+        print("="*50)
+        
     # Execute the Question 3 Machine Learning Pipeline
     ml_model.run_ml_pipeline(args.outdir, args.plotsdir)
     print("Pipeline Complete.")

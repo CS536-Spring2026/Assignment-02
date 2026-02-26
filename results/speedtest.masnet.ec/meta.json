@@ -1,0 +1,10 @@
+{
+    "server": "speedtest.masnet.ec",
+    "port": 5201,
+    "start_time": 1772061974.7939575,
+    "duration": 60,
+    "interval": 0.2,
+    "status": "success",
+    "failure_reason": null,
+    "end_time": 1772062035.7663934
+}

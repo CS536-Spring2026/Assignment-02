@@ -1,0 +1,5 @@
+# Force cross-platform line endings to LF (Unix) for scripts
+*.sh text eol=lf
+*.py text eol=lf
+*.csv text eol=lf
+*.json text eol=lf

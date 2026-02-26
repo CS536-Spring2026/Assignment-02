@@ -15,6 +15,12 @@ To automatically compile the Docker image and execute the master pipeline inside
 
 # You can still optionally override the defaults if needed:
 # ./run_experiments.sh -n 5 --duration 30
+
+# Fast-forward Mode: Skip Q1/Q2 data collection and ONLY train the Q3 ML model on existing traces:
+# ./run_experiments.sh --ml_only
+
+# Recommended: For training a robust ML Model, specify n=25 traces explicitly:
+# ./run_experiments.sh -n 25
 ```
 
 

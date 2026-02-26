@@ -13,13 +13,15 @@ FROM ubuntu:24.04
 # Prevent interactive prompts from stalling the build
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Install Python, pip, venv, and basic networking utilities
+# Install Python, pip, venv, and basic networking utilities, plus dos2unix and gcc
 RUN apt-get update && apt-get install -y \
     python3 \
     python3-pip \
     python3-venv \
     iproute2 \
     tcpdump \
+    gcc \
+    dos2unix \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
@@ -34,6 +36,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy codebase
 COPY . .
+
+# Convert all scripts to Unix LF line endings to prevent \r execution errors
+RUN dos2unix *.py *.sh
 
 # Execute the master python script. Additional args to docker run are passed here.
 ENTRYPOINT ["python3", "run_all.py"]

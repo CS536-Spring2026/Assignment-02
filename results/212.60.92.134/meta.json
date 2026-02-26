@@ -1,0 +1,10 @@
+{
+    "server": "212.60.92.134",
+    "port": 60001,
+    "start_time": 1772062097.218521,
+    "duration": 60,
+    "interval": 0.2,
+    "status": "failed",
+    "failure_reason": "data_stream_connect_failed",
+    "end_time": 1772062107.7462027
+}
